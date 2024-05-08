@@ -44,14 +44,14 @@ visibility: hidden;
 opacity: 0;
 font: size 1.8rem;;
 }
-header .nav-btn-close{
+.nav-btn-close{
     visibility: hidden;
     opacity: 0;    
 }
 @media only screen and (max-width:1024px){
     header .nav-btn{
         visibility: visible;
-        opacity: 1;    
+        opacity: 0;    
     }
 
     header nav{

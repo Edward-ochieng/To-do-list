@@ -10,17 +10,16 @@ import Navbar from "./components/Navbar";
 
     function App(){
       return(
-        <React.Fragment>
-          <Navbar/>
-          <BrowserRouter>
-          <Routes>
-          <Route path="/">Home</Route>
-          <Route path="About">About</Route>
-          </Routes>
-          </BrowserRouter>
-        </React.Fragment>
+        <BrowserRouter>
+        <Navbar/>
+        <Routes>
+        <Route path="/" element ={<Home />} />
+        <Route path="/About" element ={<About />} /> 
+        </Routes>
+        </BrowserRouter>
+        
       )
-    }
+    };
 
 
 export default App
