@@ -5,13 +5,19 @@ import Home from './components/Home';
 import About  from './components/About';    
 import React from "react";
 import Navbar from "./components/Navbar";
-import './index.css'
+
 
 
     function App(){
       return(
         <React.Fragment>
           <Navbar/>
+          <BrowserRouter>
+          <Routes>
+          <Route path="/">Home</Route>
+          <Route path="About">About</Route>
+          </Routes>
+          </BrowserRouter>
         </React.Fragment>
       )
     }
